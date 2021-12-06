@@ -1,0 +1,88 @@
+/**
+ * home/index.css
+ * 
+ * Created by André Luferat → http://www.luferat.net/
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * 
+ * Folhas de estilo da página 'home'
+ */
+
+.articles>small {
+    display: block;
+    text-align: right;
+    padding-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.art-block {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+}
+
+.art-block:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.art-block-image {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--dotted-border);
+    border-bottom: none;
+    border-radius: .4rem .4rem 0 0;
+}
+
+.art-block-content {
+    border: var(--dotted-border);
+    border-top: none;
+    border-radius: 0 0 .4rem .4rem;
+    padding: .5rem;
+}
+
+.art-block-content h3 {
+    padding: 0 0 .5rem 0;
+}
+
+.art-block-content small {
+    font-size: .85rem;
+}
+
+@media (min-width: 575px) {
+
+    .art-block {
+        flex-direction: row;
+    }
+
+    .art-block-image {
+        min-width: 100px;
+        max-width: 100px;
+        height: 100px;
+        border: var(--dotted-border);
+        border-right: none;
+        border-radius: .4rem 0 0 .4rem;
+    }
+
+    .art-block-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: var(--dotted-border);
+        border-left: none;
+        border-radius: 0 .4rem .4rem 0;
+        flex-grow: 1;
+    }
+
+    .art-block-content h3 {
+        padding: 0 0 .5rem 0;
+    }
+
+    .art-block-content small {
+        font-size: .85rem;
+    }
+
+}

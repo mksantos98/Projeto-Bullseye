@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <!-- Carrega o CSS das páginas carrega aqui -->
+    <style id="pageCSS"></style>
+    <link rel="shortcut icon" href="assets/logo01.jpg">
+    <title>BullsEye ~ No alvo da sua carreira.</title>
+</head>
+
+<body>
+
+    <a id="top"></a>
+
+    <header>
+        <div>
+            <a href="home"><img src="assets/logo_128_name_black_alpha.png" alt="Especialista"></a>
+            <h1>BullsEye<small>No alvo da sua carreira.</small></h1>
+        </div>
+    </header>
+
+    <nav>
+        <div>
+            <a href="home" title="Página inicial"><i class="fas fa-home fa-fw"></i><span>Início</span></a>
+            <a href="contacts" title="Faça contato"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></a>
+            <a href="about" title="Sobre..."><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></a>
+            <a href="login" title="Entrar / Login" id="appUser">
+                <img src="assets/user.png" alt="Logue-se"><span>Entrar</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- O conteúdo das páginas carrega aqui -->
+        <div id="pageHTML"></div>
+    </main>
+
+    <footer class="footer-top">
+        <div>
+            <a href="home"><i class="fas fa-home fa-fw"></i></a>
+            <div><i class="fab fa-creative-commons fa-fw"></i> 2021 Mikael Santos<small>Atribuição sem uso
+                    comercial</small></div>
+            <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-fw"></i></a>
+        </div>
+    </footer>
+
+    <footer class="footer-botton">
+        <div>
+            <div class="footer-social">
+                <a href="https://facebook.com/mksantos98" target="_blank"><i
+                        class="fab fa-facebook-square fa-fw"></i><span>Facebook</span></a>
+                <a href="https://github.com/mksantos98" target="_blank"><i
+                        class="fab fa-github-square fa-fw"></i><span>GitHub.com</span></a>
+                <a href="https://linkedin.com/in/mikaelsantos98/" target="_blank"><i
+                        class="fab fa-linkedin fa-fw"></i><span>LinkedIn</span></a>
+            </div>
+            <div class="footer-menu">
+                <a href="about"><i class="fas fa-info-circle fa-fw"></i><span>Sobre agente</span></a>
+                <a href="license"><i class="fab fa-creative-commons fa-fw"></i><span>Licença</span></a>
+                <a href="privacy"><i class="fas fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></ -->
+
+    <script src="jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth-compat.js"></script>
+    <script src="fb.js"></script>
+    <script src="global.js"></script>
+
+</body>
+
+</html>

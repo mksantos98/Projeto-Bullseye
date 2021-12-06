@@ -1,0 +1,37 @@
+03/11/2021
+ 
+	Desenvolvimento de App Mobile
+	Instrutor André Ataíde
+	
+Introdução:
+
+	Características de um app híbrido:
+
+ • SPA - Single Page Application
+   Aplicativo Web que contém somente uma página. Todo o conteúdo é
+   carregado dinamicamente nesta página.
+	• URL routes
+	  Rotas URL apontam para caminhos virtuais que serão processados
+      pelo JavaScript em vez de acessados pelo navegador.
+ • PWA - Progressive Web Application
+   Um site que passa a ser tratado como um aplicativo, lançando um
+   modo especial dos navegadores modernos.
+ 
+Código fonte do fessô:
+ 
+ • Local --> \\10.156.31.26\luferat\Especialista
+ • GitHub.com --> https://github.com/Luferat/Projeto-Especialista
+ 
+Servidor Web para o projeto:
+ 
+ • Abra um "Node.js command prompt"
+ • Comande --> npm install -g http-server
+ • Entre na pasta do aplicativo pelo prompt
+ • Comande --> http-server .
+
+Estrutura do app
+
+ • font awesome cdnjs --> https://cdnjs.com/libraries/font-awesome
+ • jquery cdnjs --> https://cdnjs.com/libraries/jquery
+ • Imagens gratuitas --> https://www.freepik.com/
+ • Font Awesome icons --> https://fontawesome.com/v5.15/icons

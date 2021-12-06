@@ -1,0 +1,75 @@
+/**
+ * view/index.css
+ * 
+ * Created by André Luferat → http://www.luferat.net/
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * 
+ * Folhas de estilo da página 'view'
+ */
+
+.author-date {
+    display: block;
+    text-align: right;
+    padding-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    border: none;
+    border-top: var(--dotted-border);
+}
+
+.commentForm {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.commentForm textarea {
+    width: 100%;
+    display: block;
+    margin: 0 auto .5rem auto;
+    border: var(--dotted-border);
+    border-radius: .4rem;
+    resize: vertical;
+    height: 7rem;
+}
+
+.feedBack {
+    background: rgb(0, 134, 0);
+    color: white;
+    text-align: center;
+    padding: .25rem;
+    margin-bottom: .5rem;
+    border-radius: .25rem;
+    display: none;
+    transition: none;
+}
+
+.comment-item {
+    background: rgb(224, 224, 224);
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+}
+.comment-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: var(--dotted-border);
+    font-size: .9rem;
+    padding: .25rem;
+    background: rgb(202, 202, 202);
+    border-radius: .3rem .3rem 0 0;
+}
+.comment-image img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: .5rem;
+    border-radius: 50%;    
+}
+.comment-about {}
+.comment-content {
+    padding: .5rem;
+}

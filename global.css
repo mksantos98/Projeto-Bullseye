@@ -1,0 +1,390 @@
+/***************************/
+/* Folha de estilos global */
+/***************************/
+
+/* Predefinições do layout */
+
+:root {
+  --background-color: purple;
+  --background-image: url("assets/background_1080_720_purple.jpg");
+  --font-family: sans-serif;
+  /* Windows: arial, helvetica, tahoma, verdana */
+  --min-width: 280px;
+  --max-width: 1024px;
+  --margin: auto;
+  --dotted-border: 1px dotted grey;
+}
+
+/* CSS reset */
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  transition: 0.1s;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  /* Tamanho da letra "M" --> unidade de CSS "rem" --> .5rem = 8px, 1rem = 16px, 2rem = 32px, ... */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0.85rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Fundo do aplicativo responsivo */
+
+body {
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Cabeçalho */
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  border-top: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+}
+
+header div {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+header img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+header h1 {
+  display: none;
+}
+
+/* Menu principal */
+
+nav>div {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: var(--margin);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.25rem;
+}
+
+nav a {
+  min-width: 4rem;
+  margin: 0.25rem;
+  background: black;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0.5rem 0;
+  border: 1px solid white;
+}
+
+nav a:first-child {
+  margin-right: auto;
+}
+
+nav a:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+nav a i {
+  font-size: 2rem;
+}
+
+nav a span {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+nav img {
+  display: block;
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* Rodapé superior */
+
+.footer-top {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-top: var(--dotted-border);
+  border-bottom: var(--dotted-border);
+}
+
+.footer-top>div {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: var(--margin);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-top a {
+  display: block;
+  padding: 0.5rem;
+  color: white;
+}
+
+.footer-top a:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+.footer-top i {
+  font-size: 1.5rem;
+}
+
+.footer-top div div,
+.footer-top div div i {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-top small {
+  display: block;
+  text-align: center;
+  font-size: 75%;
+  margin-top: 0.25rem;
+}
+
+/* Rodapé inferior */
+
+.footer-botton {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: var(--dotted-border);
+}
+
+.footer-botton>div {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: var(--margin);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+
+.footer-botton a {
+  display: flex;
+  padding: 0.5rem 0.25rem;
+  align-items: center;
+  font-size: 0.9rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.footer-botton i {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.footer-botton a:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+
+/* Rodapé em telas maiores */
+
+@media (min-width: 425px) {
+  .footer-botton>div {
+    justify-content: space-around;
+    padding: 1rem;
+  }
+}
+
+/* Sticky footer - rodapé sempre embaixo */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Conteúdo */
+
+main>div {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: var(--margin);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main article,
+main aside {
+  border: var(--dotted-border);
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+main article {
+  flex-grow: 1;
+}
+
+article h2:first-child {
+  padding-bottom: 0.2rem;
+  border-bottom: var(--dotted-border);
+}
+
+/* Conteúdo em larguras maiores */
+
+@media (min-width: 768px) {
+  main>div {
+    flex-direction: row;
+  }
+
+  main article {
+    margin-right: 0.25rem;
+    flex-grow: 1;
+  }
+
+  main aside {
+    margin-left: 0.25rem;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+/* Classes de uso geral */
+
+.text-center {
+  text-align: center;
+}
+
+.small {
+  font-size: small;
+}
+
+.red {
+  color: red;
+}
+
+/* Botões */
+.btn {
+  text-align: center;
+  padding: .65rem 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: .35rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-block {
+  display: block;
+  margin: 1rem 0;
+}
+
+.btn-400 {
+  display: block;
+  width: 400px;
+  margin: 1rem auto;
+}
+
+.btn-inline {
+  font-size: .9rem;
+  padding: .25rem .5rem;
+  font-weight: normal !important;
+}
+
+.btn-primary {
+  background: steelblue;
+}
+
+.btn-primary:hover {
+  background: rgb(36, 66, 90);
+}
+
+.btn-warning {
+  background: orangered;
+}
+
+.btn-warning:hover {
+  background: rgb(77, 20, 0);
+}
+
+/* Splash Screen */
+#splashScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  height: 100%;
+  transition: none;  
+}
+
+#splashScreen div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#splashScreen div img {
+  display: block;
+  margin: auto;
+}

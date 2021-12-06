@@ -1,0 +1,37 @@
+/**
+ * profile/index.css
+ * 
+ * Created by André Luferat → http://www.luferat.net/
+ * The MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * 
+ * Folhas de estilo da página 'profile'
+ */
+
+ .card {
+    border-radius: .4rem;
+    border: var(--dotted-border);
+    display: table;
+    margin: 1rem auto;
+    padding: 1rem 1rem 0 1rem;
+    width: 400px;
+ }
+
+ .card-image {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+ }
+
+ .card-content {
+
+ }
+
+ .card-content h4 {
+     padding-bottom: 0;
+     color: rgb(83, 83, 83);
+ }
+ .card-content h2 {
+     padding-top: .25rem;
+ }
+
+ 

@@ -1,0 +1,106 @@
+
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth-compat.js"></script>
+    <script src="../fb.js"></script>
+<script>
+db.collection("articles").add({
+    date: '2021-11-06 21:03:00',
+    title: 'Primeiro Artigo',
+    image: 'https://picsum.photos/536/354',
+    resume: 'Este é o primeiro artigo do nosso aplicativo.',
+	text: '<h2>Título do Artigo</h2><p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Detraxit consequat et quo num tendi nada.</p><p>Interagi no mé, cursus quis, vehicula ac nisi. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Per aumento de cachacis, eu reclamis. Mé faiz elementum girarzis, nisi eros vermeio.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Atirei o pau no gatis, per gatis num morreus. Pra lá , depois divoltis porris, paradis. Sapien in monti palavris qui num significa nadis i pareci latim. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.</p><ul><li><a href="https://github.com/mksantos98" target="_blank">GitHub do Fessô</a></li><li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Manduma pindureta quium dia nois paga. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. A ordem dos tratores não altera o pão duris. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.</p>',
+	author: 'Mikael',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Error adding document: ", error);
+});
+
+db.collection("articles").add({
+    date: '2021-11-06 21:03:00',
+    title: 'Mussum Ipsum',
+    image: 'https://picsum.photos/536/354',
+    resume: 'Este é o primeiro artigo do nosso aplicativo.',
+	text: '<h2>Título do Artigo</h2><p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Casamentiss faiz malandris se pirulitá. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Detraxit consequat et quo num tendi nada.</p><p>Interagi no mé, cursus quis, vehicula ac nisi. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Per aumento de cachacis, eu reclamis. Mé faiz elementum girarzis, nisi eros vermeio.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Atirei o pau no gatis, per gatis num morreus. Pra lá , depois divoltis porris, paradis. Sapien in monti palavris qui num significa nadis i pareci latim. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.</p><ul><li><a href="https://github.com/mksantos98" target="_blank">GitHub do Fessô</a></li><li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Manduma pindureta quium dia nois paga. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. A ordem dos tratores não altera o pão duris. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.</p>',
+	author: 'Mikael',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Error adding document: ", error);
+});
+
+
+db.collection("articles").add({
+	date : '2021-11-06 21:30:00',
+	title : 'Quando Algo dá Errado',
+	image : 'https://picsum.photos/201',
+	resume : 'Neste artigo vamos ver algo dando muito errado.',
+	text : '<h2>Título do Artigo</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos corporis modi necessitatibus at, dicta tenetur inventore perferendis aliquam incidunt voluptatum, ipsum assumenda distinctio nulla odit debitis autem magnam eaque?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi temporibus sint magnam doloremque fugiat minus expedita reprehenderit consequatur ad voluptatem, dignissimos voluptate voluptatibus blanditiis placeat, nobis veritatis aperiam totam laboriosam.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolor libero? Corporis placeat nesciunt in dolorem nisi, omnis ullam dolore reprehenderit eveniet aut aliquid officiis deserunt enim unde! Commodi, libero?</p><ul>    <li><a href="https://github.com/luferat" target="_blank">GitHub do Fessô</a></li>    <li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dicta facere assumenda veritatis esse quisquam corrupti praesentium facilis repellendus minima ducimus, deleniti dolores nemo consequatur expedita quas, laudantium numquam deserunt.</p>',
+	author : 'Mikael Santos',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Documento criado com o ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Opps! Deu erro: ", error);
+});
+
+
+db.collection("articles").add({
+	date : '2021-11-06 21:40:00',
+	title : 'Jogando Lixo Fora',
+	image : 'https://picsum.photos/202',
+	resume : 'Aprenda neste artigo a como jogar o lixo na lixeira.',
+	text : '<h2>Título do Artigo</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos corporis modi necessitatibus at, dicta tenetur inventore perferendis aliquam incidunt voluptatum, ipsum assumenda distinctio nulla odit debitis autem magnam eaque?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi temporibus sint magnam doloremque fugiat minus expedita reprehenderit consequatur ad voluptatem, dignissimos voluptate voluptatibus blanditiis placeat, nobis veritatis aperiam totam laboriosam.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolor libero? Corporis placeat nesciunt in dolorem nisi, omnis ullam dolore reprehenderit eveniet aut aliquid officiis deserunt enim unde! Commodi, libero?</p><ul>    <li><a href="https://github.com/luferat" target="_blank">GitHub do Fessô</a></li>    <li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dicta facere assumenda veritatis esse quisquam corrupti praesentium facilis repellendus minima ducimus, deleniti dolores nemo consequatur expedita quas, laudantium numquam deserunt.</p>',
+	author : 'Joca da Silva',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Documento criado com o ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Opps! Deu erro: ", error);
+});
+
+
+db.collection("articles").add({
+	date : '2021-11-06 22:25:00',
+	title : 'Acertando no Alvo',
+	image : 'https://picsum.photos/203',
+	resume : 'Escolha a carreira correta de acordo com suas habilidades e gostos pessoais.',
+	text : '<h2>Título do Artigo</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos corporis modi necessitatibus at, dicta tenetur inventore perferendis aliquam incidunt voluptatum, ipsum assumenda distinctio nulla odit debitis autem magnam eaque?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi temporibus sint magnam doloremque fugiat minus expedita reprehenderit consequatur ad voluptatem, dignissimos voluptate voluptatibus blanditiis placeat, nobis veritatis aperiam totam laboriosam.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolor libero? Corporis placeat nesciunt in dolorem nisi, omnis ullam dolore reprehenderit eveniet aut aliquid officiis deserunt enim unde! Commodi, libero?</p><ul>    <li><a href="https://github.com/luferat" target="_blank">GitHub do Fessô</a></li>    <li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dicta facere assumenda veritatis esse quisquam corrupti praesentium facilis repellendus minima ducimus, deleniti dolores nemo consequatur expedita quas, laudantium numquam deserunt.</p>',
+	author : 'Setembrino Trocatapas',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Documento criado com o ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Opps! Deu erro: ", error);
+});
+
+db.collection("articles").add({
+	date : '2021-11-07 10:15:00',
+	title : 'Domingão sem Faustão',
+	image : 'https://picsum.photos/198',
+	resume : 'como é possível se divertir ',
+	text : '<h2>Título do Artigo</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dignissimos corporis modi necessitatibus at, dicta tenetur inventore perferendis aliquam incidunt voluptatum, ipsum assumenda distinctio nulla odit debitis autem magnam eaque?</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi temporibus sint magnam doloremque fugiat minus expedita reprehenderit consequatur ad voluptatem, dignissimos voluptate voluptatibus blanditiis placeat, nobis veritatis aperiam totam laboriosam.</p><p><img src="https://picsum.photos/400/300" alt="Imagem aleatória"></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, dolor libero? Corporis placeat nesciunt in dolorem nisi, omnis ullam dolore reprehenderit eveniet aut aliquid officiis deserunt enim unde! Commodi, libero?</p><ul>    <li><a href="https://github.com/luferat" target="_blank">GitHub do Fessô</a></li>    <li><a href="http://www.catabits.com.br" target="_blank">Site do Fessô</a></li></ul><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dicta facere assumenda veritatis esse quisquam corrupti praesentium facilis repellendus minima ducimus, deleniti dolores nemo consequatur expedita quas, laudantium numquam deserunt.</p>',
+	author : 'Midoland Brasil',
+	status : 'ativo'
+})
+.then((docRef) => {
+    console.log("Documento criado com o ID: ", docRef.id);
+})
+.catch((error) => {
+    console.error("Opps! Deu erro: ", error);
+});
+
+</script>
