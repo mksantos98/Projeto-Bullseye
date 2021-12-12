@@ -9,8 +9,8 @@
 
 // Setup inicial do aplicativo
 var app = {
-    name: 'Bullseye',                       // Nome do site
-    slogan: 'No alvo da sua carreira!',     // Slogan do site
+    name: 'MK',                       // Nome do site
+    slogan: 'Técnico em Informática',     // Slogan do site
     sep: '~'                                // Separador do título
 }
 

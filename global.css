@@ -5,7 +5,7 @@
 /* Predefinições do layout */
 
 :root {
-  --background-color: purple;
+  --background-color: #071132;
   --background-image: url("assets/background_1080_720_purple.jpg");
   --font-family: sans-serif;
   /* Windows: arial, helvetica, tahoma, verdana */
@@ -388,3 +388,8 @@ article h2:first-child {
   display: block;
   margin: auto;
 }
+
+/* SELECIONANDO AS PALAVRAS E MUDANDO A COR */
+
+::selection{ background:#071132!important; color:#fff}
+::-moz-selection{ background:#071132!important; color:#fff}
