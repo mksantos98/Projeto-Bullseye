@@ -389,7 +389,7 @@ article h2:first-child {
   margin: auto;
 }
 
-/* SELECIONANDO AS PALAVRAS E MUDANDO A COR */
+/* SELECIONANDO AS PALAVRAS E MUDANDO A COR */ /* MIKAEL */
 
 ::selection{ background:#071132!important; color:#fff}
 ::-moz-selection{ background:#071132!important; color:#fff}
